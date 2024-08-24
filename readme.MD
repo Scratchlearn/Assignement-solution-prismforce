@@ -86,38 +86,48 @@ Traverse Each Circle:
        Circle 0: Enemy power k[0] = 3
            p1 = 50 > k[0].
            After fighting, p1 = 50 - 3 = 47.
+
        Circle 1: Enemy power k[1] = 4
            p1 = 47 > k[1].
            After fighting, p1 = 47 - 4 = 43.
+
        Circle 2(Enemy can regenerate power): Enemy power k[2] = 1
            p1 = 43 > k[2].
            After fighting, p1 = 43 - 1 = 42.
            regenerated_power = k[2]/2 = 0.5 = 0
            No change continue
+
        Circle 3: Enemy power k[3] = 5
            p1 = 42 > k[3].
            After fighting, p1 = 42 - 5 = 37.
+
        Circle 4: Enemy power k[4] = 8 (maximum power enemy)
           Abhimanyu skips this enemy (a1 = 1).
           a1 is decremented to 0.
+
        Circle 5: Enemy power k[5] = 3
           p1 = 37 > k[5].
           After fighting, p1 = 37 - 3 = 34.
+
        Circle 6(Enemy can regenerate power): 
           Enemy power k[6] = 5
           p1 = 34 > k[6].
           After fighting, p1 = 34 - 5 = 29.
           regenerated_power = k[6]/2 = 2
           After fighting, p1 = 29 - 2 = 27
+
        Circle 7: Enemy power k[7] = 6
           p1 = 27 > k[7].
        After fighting, p1 = 29 - 6 = 21.
+
        Circle 8: Enemy power k[8] = 4
           p1 = 21 > k[8].
           After fighting, p1 = 21 - 4 = 17.
+
        Circle 9: Enemy power k[9] = 7
          p1 = 17 > k[9].
          After fighting, p1 = 17 - 7 = 10.
+
        Circle 10: Enemy power k[10] = 2
          p1 = 10 > k[10].
          After fighting, p1 = 10 - 2 = 8.
@@ -156,26 +166,32 @@ Dry Run Example-2:
         Circle 0: Enemy power k[0] = 3
            p2 = 30 > k[0].
           After fighting, p2 = 30 - 3 = 27.
+
         Circle 1: Enemy power k[1] = 4
            p2 = 27 > k[1].
           After fighting, p2 = 27 - 4 = 23.
+
         Circle 2(Enemy can regenerate power): 
            Enemy power k[2] = 5
            p2 = 23 > k[2].
            After fighting, p2 = 23 - 5 = 18.
            regenerated_power = k[2]/2 = 2.
            After fighting  =  18 - 2 = 16
+
         Circle 3: Enemy power k[3] = 6
            p2 = 16 > k[3].
            After fighting, p2 = 16 - 6 = 10.
+
         Circle 4: Enemy power k[4] = 7
            p2 = 10 > k[4].
            After fighting, p2 = 10 - 7 = 3.
+
         Circle 5: Enemy power k[5] = 8
           p2 = 3 < k[5].
           Abhimanyu uses 1 recharge (b2 = 2 i.e, b2=1):
           Recharge power to max(p2, k[5]), so p2 = 8 (since k[5] = 8).
           After fighting, p2 = 8 - 8 = 0.
+
         Circle 6(Enemy can regenerate power): 
           Enemy power k[6] = 9
           p2 = 0 < k[6].
