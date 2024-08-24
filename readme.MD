@@ -1,5 +1,4 @@
-Algorithm: Can Abhimanyu Cross the Chakravyuha?
-          This algorithm determines whether Abhimanyu can successfully cross all circles of the Chakravyuha, given certain constraints like his power p, the power of enemies guarding each circle, and his ability to skip some enemies and recharge power a limited number of times.
+Algorithm:
 
 Input:
 
